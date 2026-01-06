@@ -3,6 +3,6 @@ tensorflow
 matplotlib
 numpy>=1.23.0
 matplotlib>=3.7.0
-opencv-python>=4.8.0
+opencv-python-headless>=4.8.0
 ultralytics>=8.0.200
 reportlab>=4.0.0

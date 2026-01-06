@@ -1,5 +1,5 @@
 # =============================
-# AgroVision AI - FINAL app.py
+# AgroSensi AI - FINAL app.py
 # =============================
 
 import streamlit as st
@@ -22,7 +22,7 @@ from reportlab.lib.units import inch
 # PAGE CONFIG
 # =============================
 st.set_page_config(
-    page_title="AgroVision AI",
+    page_title="AgroSensi AI",
     page_icon="🌱",
     layout="wide"
 )
@@ -87,7 +87,7 @@ if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 
 if not st.session_state.logged_in:
-    st.title("🔐 AgroVision AI Login")
+    st.title("🔐 AgroSensi AI Login")
     with st.form("login"):
         u = st.text_input("Username")
         p = st.text_input("Password", type="password")
@@ -119,7 +119,7 @@ veg_model = load_veg()
 # =============================
 # SIDEBAR
 # =============================
-st.sidebar.title("🌿 AgroVision AI")
+st.sidebar.title("🌿 AgroSensi AI")
 menu = st.sidebar.radio(
     "Navigation",
     ["🏠 Home", "🌱 Soil Classification", "🌿 Vegetation Segmentation", "ℹ️ About"]
@@ -133,12 +133,12 @@ if st.sidebar.button("🚪 Logout"):
 # HOME
 # =============================
 if menu == "🏠 Home":
-    st.title("🌿 AgroVision AI")
+    st.title("🌿 AgroSensi AI")
     st.caption("An Explainable AI Platform for Smart & Sustainable Agriculture")
 
     st.markdown("""
     <div class="card">
-    AgroVision AI combines **Deep Learning, Explainable AI, and Computer Vision**  
+    AgroSensi AI combines **Deep Learning, Explainable AI, and Computer Vision**  
     to deliver **real-world agricultural intelligence**, not just predictions.
     </div>
     """, unsafe_allow_html=True)
@@ -258,14 +258,14 @@ elif menu == "🌿 Vegetation Segmentation":
 # ABOUT (MODERN & HUMAN)
 # =============================
 else:
-    st.title("ℹ️ About AgroVision AI")
+    st.title("ℹ️ About AgroSensi AI")
 
     st.markdown("""
     <div class="card">
-    <h3>Why AgroVision AI?</h3>
+    <h3>Why AgroSensi AI?</h3>
     <p>
     Most agriculture-related AI projects stop at predictions.  
-    AgroVision AI was built to go one step further —  
+    AgroSensi AI was built to go one step further —  
     <b>to explain, visualize, and validate every prediction it makes.</b>
     </p>
     <p>
@@ -279,7 +279,7 @@ else:
     <div class="card">
     <h3>What Does It Do?</h3>
     <p>
-    AgroVision AI focuses on two core agricultural intelligence tasks:
+    AgroSensi AI focuses on two core agricultural intelligence tasks:
     </p>
     <p>
     <b>🌱 Soil Classification</b><br>
@@ -316,7 +316,7 @@ else:
     <div class="card">
     <h3>Engineering Approach</h3>
     <p>
-    AgroVision AI follows a clean and modular design philosophy.
+    AgroSensi AI follows a clean and modular design philosophy.
     </p>
     <p>
     Models are loaded once, reused efficiently, and separated from UI logic.
@@ -334,7 +334,7 @@ else:
     <div class="card">
     <h3>Who Is This For?</h3>
     <p>
-    AgroVision AI is built with multiple users in mind:
+    AgroSensi AI is built with multiple users in mind:
     </p>
     <p>
     • Students exploring applied deep learning  
